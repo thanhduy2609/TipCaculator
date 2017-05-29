@@ -13,7 +13,7 @@
         <!--Settings-->
         <scene sceneID="FpS-HB-ld4">
             <objects>
-                <viewController id="H7H-Rj-H1Q" sceneMemberID="viewController">
+                <viewController id="H7H-Rj-H1Q" customClass="SettingViewController" customModule="TipCaculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C6y-Xx-tMB"/>
                         <viewControllerLayoutGuide type="bottom" id="d5L-4p-GQG"/>
@@ -21,9 +21,27 @@
                     <view key="view" contentMode="scaleToFill" id="hEB-Qp-5jL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTu-yW-8pu">
+                                <rect key="frame" x="27" y="226" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rTu-yW-8pu" firstAttribute="centerX" secondItem="hEB-Qp-5jL" secondAttribute="centerX" id="eJH-6a-akP"/>
+                            <constraint firstItem="rTu-yW-8pu" firstAttribute="centerY" secondItem="hEB-Qp-5jL" secondAttribute="centerY" id="oHe-la-88m"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="Uxx-bg-zOo"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Uxx-bg-zOo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Qko-i8-eGH">
+                            <connections>
+                                <action selector="btnDone:" destination="H7H-Rj-H1Q" id="wYa-8Y-lZ0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pickerView" destination="rTu-yW-8pu" id="G30-Mg-shX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AWf-5J-AbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,6 +89,9 @@
                                 <state key="normal" title="Tính Tiền">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Myc-nF-3qG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -104,6 +125,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lblTip" destination="M2w-NE-ge3" id="IQd-eF-YBd"/>
+                        <outlet property="txtPrice" destination="dLA-rh-feM" id="3kX-Yv-UHQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,7 +137,7 @@
         <!--History-->
         <scene sceneID="c5I-u4-plf">
             <objects>
-                <viewController id="nTr-K8-ll2" sceneMemberID="viewController">
+                <viewController id="nTr-K8-ll2" customClass="HistoryViewController" customModule="TipCaculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Br-BU-MqV"/>
                         <viewControllerLayoutGuide type="bottom" id="Z19-nR-uaZ"/>
@@ -133,7 +158,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k12-GL-yxi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NiO-E4-m0j">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NiO-E4-m0j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>

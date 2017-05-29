@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30C363441EDC8069001843AE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C363431EDC8069001843AE /* HistoryViewController.swift */; };
+		30C363461EDC8075001843AE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C363451EDC8075001843AE /* SettingViewController.swift */; };
 		30E3D9A71ECFF87E00310325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3D9A61ECFF87E00310325 /* AppDelegate.swift */; };
 		30E3D9A91ECFF87E00310325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E3D9A81ECFF87E00310325 /* ViewController.swift */; };
 		30E3D9AC1ECFF87E00310325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E3D9AA1ECFF87E00310325 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30C363431EDC8069001843AE /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		30C363451EDC8075001843AE /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		30E3D9A31ECFF87E00310325 /* TipCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E3D9A61ECFF87E00310325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30E3D9A81ECFF87E00310325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30C363421EDC804E001843AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30E3D9A81ECFF87E00310325 /* ViewController.swift */,
+				30C363431EDC8069001843AE /* HistoryViewController.swift */,
+				30C363451EDC8075001843AE /* SettingViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		30E3D99A1ECFF87E00310325 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +111,8 @@
 		30E3D9A51ECFF87E00310325 /* TipCaculator */ = {
 			isa = PBXGroup;
 			children = (
+				30C363421EDC804E001843AE /* Controllers */,
 				30E3D9A61ECFF87E00310325 /* AppDelegate.swift */,
-				30E3D9A81ECFF87E00310325 /* ViewController.swift */,
 				30E3D9AA1ECFF87E00310325 /* Main.storyboard */,
 				30E3D9AD1ECFF87E00310325 /* Assets.xcassets */,
 				30E3D9AF1ECFF87E00310325 /* LaunchScreen.storyboard */,
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C363441EDC8069001843AE /* HistoryViewController.swift in Sources */,
 				30E3D9A91ECFF87E00310325 /* ViewController.swift in Sources */,
 				30E3D9A71ECFF87E00310325 /* AppDelegate.swift in Sources */,
+				30C363461EDC8075001843AE /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +523,7 @@
 				30E3D9CD1ECFF87F00310325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30E3D9CE1ECFF87F00310325 /* Build configuration list for PBXNativeTarget "TipCaculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				30E3D9D01ECFF87F00310325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30E3D9D11ECFF87F00310325 /* Build configuration list for PBXNativeTarget "TipCaculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				30E3D9D31ECFF87F00310325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
